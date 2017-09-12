@@ -223,6 +223,10 @@
 (global-set-key "\eOB" 'next-line)
 (global-set-key "\eOC" 'forward-char)
 (global-set-key "\eOD" 'backward-char)
+(global-set-key (kbd "<C-left>")  'windmove-left)
+(global-set-key (kbd "<C-down>")  'windmove-down)
+(global-set-key (kbd "<C-up>")    'windmove-up)
+(global-set-key (kbd "<C-right>") 'windmove-right)
 ;; (global-set-key "\C-x\C-m" 'compile)
 ;; (global-set-key "\C-xw" 'what-line)
 
