@@ -189,6 +189,9 @@
 ;; (require 'elscreen)
 ;; (elscreen-start)
 ;; make \C-z as a prefix conflicts with my key bindings
+;; Neotree
+(require 'neotree)
+(global-set-key "\C-o" 'neotree-toggle)
 ;; Golden Ratio
 (golden-ratio-mode 1)
 ;; Saveplace
@@ -234,7 +237,7 @@
     ;; If there is more than one, they won't work right.
     '(package-selected-packages
          (quote
-             (anything multi-term editorconfig go-mode groovy-mode material-theme hiwin golden-ratio git-gutter dash auto-complete async))))
+             (neotree anything multi-term editorconfig go-mode groovy-mode material-theme hiwin golden-ratio git-gutter dash auto-complete async))))
 (custom-set-faces
     ;; custom-set-faces was added by Custom.
     ;; If you edit it by hand, you could mess it up, so be careful.
