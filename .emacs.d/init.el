@@ -122,16 +122,19 @@
         space-mark
         tab-mark))
 (setq whitespace-display-mappings
-      '((space-mark ?\u3000 [?\u25a1])
-        (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
+    '(
+         (space-mark ?\u3000 [?\u25a1])
+;;         (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])
+         ))
 (setq-default show-trailing-whitespace t)
 (global-whitespace-mode 1)
-(set-face-background 'trailing-whitespace "#b14770")
+(set-face-background 'trailing-whitespace "#ffccff")
 (set-face-attribute 'whitespace-trailing nil
-                    :background "#b14770"
+                    :background "#ffccff"
                     :underline t)
 (set-face-attribute 'whitespace-tab nil
-                    :foreground "SkyBlue"
+;;                    :foreground "SkyBlue"
+                    :background "#ccffff"
                     :underline t)
 (set-face-attribute 'whitespace-space nil
                     :foreground "GreenYellow"
