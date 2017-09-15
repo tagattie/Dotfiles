@@ -16,7 +16,7 @@ indent_style = tab
 [*.md]
 trim_trailing_whitespace = false
 
-[Makefile]
+[Makefile,GNUmakefile]
 indent_size = 8
 indent_style = tab
 
