@@ -1,0 +1,15 @@
+# Setup file for GNU readline library
+# .inputrc
+
+set editing-mode    emacs
+
+$if mode=emacs
+C-q: quoted-insert
+$endif
+
+set bell-style      visible
+set completion-ignore-case On
+set convert-meta    Off
+set enable-keypad   On
+set input-meta      On
+set output-meta     On
