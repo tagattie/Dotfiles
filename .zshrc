@@ -90,8 +90,7 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug check || zplug install
 zplug load
 
-# SSH agent
-eval $(keychain --eval --agents ssh id_rsa)
+[[ -f ${HOMER}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 
 # Setting for Emacs TRAMP
 [[ ${TERM} == "dumb" ]] && unsetopt zle && PS1='$ '
