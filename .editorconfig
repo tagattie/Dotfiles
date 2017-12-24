@@ -1,3 +1,6 @@
+# Setup file for EditorConfig
+# .editorconfig
+
 # top-most EditorConfig file
 root = true
 
@@ -10,13 +13,13 @@ indent_size = 8
 indent_style = tab
 trim_trailing_whitespace = true
 
+[*.{el,ex,exs,json}]
+indent_size = 2
+indent_style = space
+
 [*.go]
 indent_size = 4
 indent_style = tab
-
-[*.{ex,exs,json}]
-indent_size = 2
-indent_style = space
 
 [*.md]
 trim_trailing_whitespace = false
