@@ -24,6 +24,10 @@ indent_style = tab
 [*.md]
 trim_trailing_whitespace = false
 
+[*.sh]
+indent_size = 4
+indent_style = space
+
 [Jenkinsfile]
 indent_size = 4
 indent_style = space
