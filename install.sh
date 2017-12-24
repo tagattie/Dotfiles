@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Check necessary packages are installed
-PREREQUISITE_CMDS="git zsh python curl"
+PREREQUISITE_CMDS="git zsh python curl emacs"
 for i in ${PREREQUISITE_CMDS}; do
     which "${i}" > /dev/null 2>&1; NOT_FOUND=$?
     if [ $NOT_FOUND -ne 0 ]; then
