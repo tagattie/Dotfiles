@@ -31,4 +31,4 @@ export QTDIR=${LOCALBASE}
 export TMPDIR=/tmp
 export XWINHOME=${LOCALBASE}
 
-[[ -f ${HOME}/.zshenv.private ]] && source ${HOME}/.zshenv.private
+[[ -f ${HOME}/.zshenv.local ]] && source ${HOME}/.zshenv.local
