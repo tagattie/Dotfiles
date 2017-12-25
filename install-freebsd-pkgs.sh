@@ -24,27 +24,39 @@ PKGS_EMACS="editors/emacs \
 
 CMD_NAME=$(basename "$0")
 print_usage() {
-    echo "Usage: ${CMD_NAME} essential|x11|emacs"
+    echo "Usage: ${CMD_NAME} [-n] essential|x11|emacs"
+    echo "Options:"
+    echo "  -n: Dry run."
     exit 0
 }
 
 install() {
+    INSTALL_CMD="pkg install ${PKG_INSTALL_FLAG}"
     case $1 in
         "essential")
-            pkg install ${PKGS_ESSENTIAL} ;;
+            ${INSTALL_CMD} ${PKGS_ESSENTIAL} ;;
         "x11")
-            pkg install ${PKGS_X11} ;;
+            ${INSTALL_CMD} ${PKGS_X11} ;;
         "emacs")
-            pkg install ${PKGS_EMACS} ;;
+            ${INSTALL_CMD} ${PKGS_EMACS} ;;
         *)
             print_usage
     esac
     return $?
 }
 
+while getopts n OPT; do
+    case ${OPT} in
+        "n")
+            PKG_INSTALL_FLAG="-n"
+    esac
+done
+
+shift $(($OPTIND - 1))
 if [ $# -ne 1 ]; then
     print_usage
 fi
 
 install "$1"
+
 exit $?
