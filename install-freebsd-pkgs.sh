@@ -4,6 +4,7 @@ export LANG=C
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
 PKGS_ESSENTIAL="shells/zsh \
+    devel/gmake \
     lang/python \
     security/sudo \
     misc/lv \
