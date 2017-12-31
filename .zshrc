@@ -90,7 +90,7 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug check || zplug install
 zplug load
 
-[[ -f ${HOMER}/.zshrc.local ]] && source ${HOME}/.zshrc.local
+[[ -f ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 
 # Setting for Emacs TRAMP
 [[ ${TERM} == "dumb" ]] && unsetopt zle && PS1='$ '
