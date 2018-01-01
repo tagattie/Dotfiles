@@ -4,7 +4,9 @@
 (source melpa)
 (source org)
 
+(depends-on "ace-isearch")
 (depends-on "auto-complete")
+(depends-on "avy")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")
@@ -26,6 +28,7 @@
 (depends-on "golden-ratio")
 (depends-on "groovy-mode")
 (depends-on "helm")
+(depends-on "helm-swoop")
 (depends-on "hiwin")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")

@@ -159,6 +159,13 @@
 (global-set-key (kbd "<C-right>") 'windmove-right)
 
 ;; External packages
+;; Ace Isearch
+(use-package ace-isearch
+  :config
+  (global-ace-isearch-mode 1)
+  (setq ace-isearch-jump-delay 0.5)
+  (setq ace-isearch-function 'avy-goto-char)
+  (setq ace-isearch-use-jump 'printing-char))
 ;; Auto Complete
 (use-package auto-complete-config
   :config
