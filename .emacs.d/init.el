@@ -145,7 +145,6 @@
 (global-set-key (kbd "\C-xi")     'insert-file)
 (global-set-key (kbd "C-/")       'comment-or-uncomment-region)
 (global-set-key (kbd "\M- ")      'set-mark-command)
-(global-set-key (kbd "\C-xs")     'isearch-forward)
 (global-set-key (kbd "\M-r")      'replace-string)
 (global-set-key (kbd "\M-\C-r")   'query-replace-regexp)
 (global-set-key (kbd "\C-z")      'scroll-down)
