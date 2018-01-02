@@ -192,6 +192,8 @@
 (use-package flycheck-checkbashisms
   :config
   (flycheck-checkbashisms-setup))
+;; Iedit
+(use-package iedit)
 ;; Magit
 (use-package magit
   :bind ("C-c g" . magit-status))
