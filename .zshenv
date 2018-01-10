@@ -30,5 +30,6 @@ export PAGER=lv
 export QTDIR=${LOCALBASE}
 export TMPDIR=/tmp
 export XWINHOME=${LOCALBASE}
+[[ -z ${DISPLAY} ]] && export EDITOR='emacsclient -nw'
 
 [[ -f ${HOME}/.zshenv.local ]] && source ${HOME}/.zshenv.local
