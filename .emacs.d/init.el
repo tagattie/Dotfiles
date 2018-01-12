@@ -239,6 +239,13 @@
 ;;   (setq nlinum-format "%5d ")
 ;;   (set-face-attribute 'linum nil
 ;;     :height 0.8))
+;; Markdown
+(use-package markdown-mode
+  :mode
+  (("README\\.md\\'" . gfm-mode)
+    ("\\.md\\'" . markdown-mode))
+  :init
+  (setq markdown-command "markdown2"))
 ;; Polymode
 (use-package polymode)
 ;; Recentf Ext
