@@ -54,11 +54,13 @@ install() {
 while getopts n OPT; do
     case ${OPT} in
         "n")
-            PKG_INSTALL_FLAG="-n"
+            PKG_INSTALL_FLAG="-n" ;;
+        *)
+            print_usage ;;
     esac
 done
 
-shift $(($OPTIND - 1))
+shift $((OPTIND - 1))
 if [ $# -ne 1 ]; then
     print_usage
 fi
