@@ -86,6 +86,7 @@ export ZPLUG_HOME=${HOME}/.zplug
 source ${ZPLUG_HOME}/init.zsh
 zplug "mollifier/anyframe"
 zplug "b4b4r07/enhancd", use:init.sh
+zplug "marzocchi/zsh-notify"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
@@ -110,6 +111,10 @@ bindkey '^x^f' anyframe-widget-insert-filename
 
 # Enhancd
 export ENHANCD_FILTER=peco
+
+# Zsh-notify
+zstyle ':notify:*' notifier /usr/local/bin/noti
+zstyle ':notify:*' activate-terminal yes
 
 [[ -f ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 
