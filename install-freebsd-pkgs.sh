@@ -3,8 +3,7 @@
 export LANG=C
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
-PKGS_ESSENTIAL="shells/zsh \
-    devel/gmake \
+PKGS_ESSENTIAL="devel/gmake \
     lang/python \
     security/sudo \
     misc/lv \
@@ -13,6 +12,11 @@ PKGS_ESSENTIAL="shells/zsh \
     ftp/curl \
     net/rsync \
     devel/git"
+PKGS_ZSH="shells/zsh \
+    textproc/fzf
+    textproc/peco \
+    x11/wmctrl \
+    x11/xdotool"
 PKGS_X11="x11/xorg \
     x11/mate \
     x11/xscreensaver \
@@ -35,6 +39,8 @@ install() {
     case $1 in
         "essential")
             ${INSTALL_CMD} ${PKGS_ESSENTIAL} ;;
+        "zsh")
+            ${INSTALL_CMD} ${PKGS_ZSH} ;;
         "x11")
             ${INSTALL_CMD} ${PKGS_X11} ;;
         "emacs")
