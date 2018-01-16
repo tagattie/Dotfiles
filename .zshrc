@@ -113,8 +113,7 @@ bindkey '^x^f' anyframe-widget-insert-filename
 export ENHANCD_FILTER=peco
 
 # Zsh-notify
-zstyle ':notify:*' notifier /usr/local/bin/noti
-zstyle ':notify:*' activate-terminal yes
+zstyle ':notify:*' notifier /usr/local/bin/notify-send
 
 [[ -f ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 
