@@ -119,3 +119,7 @@ zstyle ':notify:*' notifier /usr/local/bin/notify-send
 
 # Setting for Emacs TRAMP
 [[ ${TERM} == "dumb" ]] && unsetopt zle && PS1='$ '
+
+# Local Variables:
+# mode: shell-script
+# End:

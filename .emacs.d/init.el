@@ -1,4 +1,4 @@
-;;; init.el --- setup file for Emacs -*- Mode: Emacs-Lisp -*-
+;;; init.el --- setup file for Emacs
 
 ;;; Commentary:
 
@@ -270,3 +270,7 @@
 
 (provide 'init)
 ;;; init.el ends here
+
+;; Local Variables:
+;; mode: emacs-lisp
+;; End:

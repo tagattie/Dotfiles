@@ -1,5 +1,3 @@
-;; -*- Mode: Emacs-Lisp -*-
-
 (source gnu)
 (source melpa)
 (source org)
@@ -57,3 +55,7 @@
 (depends-on "web-mode")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+
+;; Local Variables:
+;; mode: emacs-lisp
+;; End:

@@ -33,3 +33,7 @@ export XWINHOME=${LOCALBASE}
 [[ -z ${DISPLAY} ]] && export EDITOR='emacsclient -nw'
 
 [[ -f ${HOME}/.zshenv.local ]] && source ${HOME}/.zshenv.local
+
+# Local Variables:
+# mode: shell-script
+# End:
