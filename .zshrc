@@ -77,7 +77,8 @@ alias md=mkdir
 alias mv='mv -i'
 alias q=exit
 alias rd=rmdir
-alias rm='\rm -i'
+alias rm='rm -i'
+alias tset='set noglob histchars=""; eval `\tset -s \!*`; unset noglob histchars'
 alias where='type -a'
 alias xinit='\xinit > ${HOME}/.xinit-errors 2>&1'
 
