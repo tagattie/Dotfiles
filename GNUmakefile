@@ -1,13 +1,13 @@
 CANDIDATES :=	$(wildcard .??*)
 EXCLUDES :=	.emacs.d .git .gitignore
 DOTFILES :=	$(filter-out $(EXCLUDES), $(CANDIDATES))
-EMACSINITFILES :=	Cask init.el
+EMACSINITFILES :=	.emacs.d/Cask .emacs.d/init.el
 
 .PHONY: install-dotfiles
 install-dotfiles:
 	@$(foreach target, $(DOTFILES), ln -sfv $(abspath $(target)) $(HOME)/$(target);)
 	mkdir -p $(HOME)/.emacs.d
-	@$(foreach target, $(EMACSINITFILES), ln -sfv $(abspath $(target)) $(HOME)/.emacs.d/$(target);)
+	@$(foreach target, $(EMACSINITFILES), ln -sfv $(abspath $(target)) $(HOME)/$(target);)
 
 .PHONY: install-emacs
 install-emacs:
