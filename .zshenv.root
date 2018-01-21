@@ -1,0 +1,33 @@
+# Environment setup file for zsh (root version)
+# .zshenv.root
+
+# Local variables
+LOCALBASE=/usr/local
+PKGBASE=/usr/pkg
+
+# Basic
+limit coredumpsize 0
+umask 022
+
+# Shell parameters
+cdpath=(. .. ~)
+manpath=(/usr/share/man /usr/share/openssl/man \
+    ${LOCALBASE}/man ${PKGBASE}/man)
+path=(/sbin /bin
+    /usr/sbin /usr/bin \
+    ${LOCALBASE}/sbin ${LOCALBASE}/bin
+    ${PKGBASE}/sbin ${PKGBASE}/bin)
+
+# Environment variables
+export BLOCKSIZE=K
+export EDITOR=vi
+export LANG=C
+export LV='-Ou8'
+export PAGER=less
+export TMPDIR=/tmp
+
+[[ -f ${HOME}/.zshenv.local ]] && source ${HOME}/.zshenv.local
+
+# Local Variables:
+# mode: shell-script
+# End:
