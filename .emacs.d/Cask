@@ -1,6 +1,7 @@
 (source gnu)
 (source melpa)
 (source org)
+(source marmalade)
 
 (depends-on "ace-isearch")
 (depends-on "auto-complete")
@@ -35,7 +36,6 @@
 (depends-on "markdown-mode")
 (depends-on "markdown-preview-mode")
 (depends-on "material-theme")
-(depends-on "mozc")
 (depends-on "multiple-cursors")
 (depends-on "neotree")
 (depends-on "nlinum")
@@ -51,6 +51,7 @@
 (depends-on "smartparens")
 (depends-on "smex")
 (depends-on "sudo-edit")
+(depends-on "toml-mode")
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
