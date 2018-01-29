@@ -239,6 +239,12 @@
 ;;   (setq nlinum-format "%5d ")
 ;;   (set-face-attribute 'linum nil
 ;;     :height 0.8))
+;; Logstash conf
+(use-package logstash-conf-mode
+  :mode
+  ("logstash\\.conf\\'" . logstash-conf-mode)
+  :init
+  (set-variable 'logstash-indent 2))
 ;; Markdown
 (use-package markdown-mode
   :mode

@@ -32,6 +32,7 @@
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
 (depends-on "iedit")
+(depends-on "logstash-conf")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "markdown-preview-mode")
