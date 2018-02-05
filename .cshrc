@@ -36,24 +36,28 @@ setenv TMPDIR       /tmp
 setenv XWINHOME     ${LOCALBASE}
 
 # Aliases
-alias bzip2 'bzip2 -9vv'
-alias cd    'cd \!* ; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
-alias cd..  'cd ..'
-alias cp    'cp -i'
-alias h     history
-alias j     'jobs -l'
-alias l     '\ls -agilFT'
-alias la    '\ls -aF'
-alias less  lv
-alias ls    '\ls -F'
-alias md    mkdir
-alias mv    'mv -i'
-alias popd  'popd \!*; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
-alias pushd 'pushd \!*; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
-alias q     exit
-alias rd    rmdir
-alias rm    'rm -i'
-alias xinit '\xinit >& ${HOME}/.xinit-errors'
+alias bzip2  'bzip2 -9vv'
+alias cd     'cd \!* ; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
+alias cd..   'cd ..'
+alias cp     'cp -i'
+alias gco    'git checkout'
+alias gmerge 'git merge'
+alias gpull  'git pull'
+alias gpush  'git push'
+alias h      history
+alias j      'jobs -l'
+alias l      '\ls -agilFT'
+alias la     '\ls -aF'
+alias less   lv
+alias ls     '\ls -F'
+alias md     mkdir
+alias mv     'mv -i'
+alias popd   'popd \!*; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
+alias pushd  'pushd \!*; set prompt = "[${user}@${HOST}]`pwd`:\\!% "'
+alias q      exit
+alias rd     rmdir
+alias rm     'rm -i'
+alias xinit  '\xinit >& ${HOME}/.xinit-errors'
 
 # Interactive shell
 if ( $?prompt ) then

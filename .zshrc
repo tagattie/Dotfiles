@@ -67,6 +67,10 @@ autoload -Uz zmv
 alias bzip2='bzip2 -9vv'
 alias cd..='cd ..'
 alias cp='cp -i'
+alias gco='git checkout'
+alias gmerge='git merge'
+alias gpull='git pull'
+alias gpush='git push'
 alias h=history
 alias j='jobs -l'
 alias l='\ls -agilFGT'
