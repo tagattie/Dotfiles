@@ -44,6 +44,7 @@ alias gco    'git checkout'
 alias gmerge 'git merge'
 alias gpull  'git pull'
 alias gpush  'git push'
+alias gst    'git status'
 alias h      history
 alias j      'jobs -l'
 alias l      '\ls -agilFT'
