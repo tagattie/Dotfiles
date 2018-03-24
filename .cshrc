@@ -9,19 +9,6 @@ set PKGBASE=/usr/pkg
 limit coredumpsize 0
 umask 022
 
-# Shell variables
-set cdpath=(. .. ~)
-set color
-set filec
-set history=50000
-set savehist=50000
-set ignoreeof=0
-set notify
-set path=(${HOME}/.cask/bin ${HOME}/bin \
-    ${GOPATH}/bin \
-    ${LOCALBASE}/bin ${PKGBASE}/bin /usr/bin /bin \
-    ${LOCALBASE}/sbin ${PKGBASE}/sbin /usr/sbin /sbin)
-
 # Environment variables
 setenv EDITOR       emacsclient
 setenv GOPATH       ${HOME}/share/go
@@ -34,6 +21,19 @@ setenv PAGER        lv
 setenv QTDIR        ${LOCALBASE}
 setenv TMPDIR       /tmp
 setenv XWINHOME     ${LOCALBASE}
+
+# Shell variables
+set cdpath=(. .. ~)
+set color
+set filec
+set history=50000
+set savehist=50000
+set ignoreeof=0
+set notify
+set path=(${HOME}/.cask/bin ${HOME}/bin \
+    ${GOPATH}/bin \
+    ${LOCALBASE}/bin ${PKGBASE}/bin /usr/bin /bin \
+    ${LOCALBASE}/sbin ${PKGBASE}/sbin /usr/sbin /sbin)
 
 # Aliases
 alias bzip2  'bzip2 -9vv'
