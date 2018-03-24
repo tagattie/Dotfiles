@@ -88,16 +88,18 @@ alias where='type -a'
 alias xinit='\xinit > ${HOME}/.xinit-errors 2>&1'
 
 # Zplug plugin manager
-export ZPLUG_HOME=${HOME}/.zplug
-source ${ZPLUG_HOME}/init.zsh
-zplug "mollifier/anyframe"
-zplug "b4b4r07/enhancd", use:init.sh
-zplug "marzocchi/zsh-notify"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug check || zplug install
-zplug load
+if [[ -x ${HOME}/.zplug ]]; then
+    export ZPLUG_HOME=${HOME}/.zplug
+    source ${ZPLUG_HOME}/init.zsh
+    zplug "mollifier/anyframe"
+    zplug "b4b4r07/enhancd", use:init.sh
+    zplug "marzocchi/zsh-notify"
+    zplug "zsh-users/zsh-autosuggestions"
+    zplug "zsh-users/zsh-completions"
+    zplug "zsh-users/zsh-syntax-highlighting", defer:2
+    zplug check || zplug install
+    zplug load
+fi
 
 # Anyframe
 bindkey '^xb' anyframe-widget-cdr
