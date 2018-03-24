@@ -14,15 +14,15 @@ PKGS_ESSENTIAL="devel/gmake \
     devel/git"
 PKGS_ZSH="shells/zsh \
     textproc/fzf
-    textproc/peco \
-    x11/wmctrl \
-    x11/xdotool"
+    textproc/peco"
 PKGS_X11="x11/xorg \
     x11/mate \
     x11/xscreensaver \
     x11-fonts/noto \
     japanese/font-std \
-    japanese/ibus-mozc"
+    japanese/ibus-mozc \
+    x11/wmctrl \
+    x11/xdotool"
 PKGS_EMACS="editors/emacs \
     japanese/mozc-el"
 
