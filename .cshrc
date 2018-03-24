@@ -10,7 +10,6 @@ limit coredumpsize 0
 umask 022
 
 # Environment variables
-setenv EDITOR       emacsclient
 setenv GOPATH       ${HOME}/share/go
 setenv GOROOT       ${LOCALBASE}/go
 setenv HOST         `hostname -s`
@@ -21,6 +20,11 @@ setenv PAGER        lv
 setenv QTDIR        ${LOCALBASE}
 setenv TMPDIR       /tmp
 setenv XWINHOME     ${LOCALBASE}
+if ( -x ${LOCALBASE}/bin/emacs ) then
+    setenv EDITOR   emacsclient
+else
+    setenv EDITOR   vi
+endif
 
 # Shell variables
 set cdpath=(. .. ~)

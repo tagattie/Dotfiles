@@ -19,7 +19,6 @@ path=(${HOME}/.cask/bin ${HOME}/bin \
     ${LOCALBASE}/sbin ${PKGBASE}/sbin /usr/sbin /sbin)
 
 # Environment variables
-export EDITOR=emacsclient
 export GOPATH=${HOME}/share/go
 export GOROOT=${LOCALBASE}/go
 export LV='-Ou8'
@@ -30,7 +29,12 @@ export PAGER=lv
 export QTDIR=${LOCALBASE}
 export TMPDIR=/tmp
 export XWINHOME=${LOCALBASE}
-[[ -z ${DISPLAY} ]] && export EDITOR='emacsclient -nw'
+if [[ -x ${LOCALBASE} ]]; then
+    [[ -z ${DISPLAY} ]] && export EDITOR='emacsclient -nw'
+    [[ -z ${DISPLAY} ]] || export EDITOR=emacsclient
+else
+    export EDITOR=vi
+fi
 
 [[ -f ${HOME}/.zshenv.local ]] && source ${HOME}/.zshenv.local
 
