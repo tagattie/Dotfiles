@@ -48,8 +48,8 @@
   (progn
     ;; Fontset
     (set-face-attribute 'default nil
-      :family "Noto Sans Mono"
-      :height 100)
+      :family "Ricty"
+      :height 120)
     (set-fontset-font (frame-parameter nil 'font)
       'katakana-jisx0201
       (font-spec :family "Noto Sans Mono CJK JP"))

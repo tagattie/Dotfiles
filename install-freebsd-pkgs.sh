@@ -19,6 +19,7 @@ PKGS_X11="x11/xorg \
     x11/mate \
     x11/xscreensaver \
     x11-fonts/noto \
+    japanese/font-ricty \
     japanese/font-std \
     japanese/ibus-mozc \
     x11/wmctrl \
