@@ -29,8 +29,9 @@ export PAGER=lv
 export QTDIR=${LOCALBASE}
 export TMPDIR=/tmp
 export XWINHOME=${LOCALBASE}
-if [[ -x ${LOCALBASE}/bin/emacs ]]; then
-    [[ -z ${DISPLAY} ]] && export EDITOR='emacsclient -nw'
+if [[ -x ${LOCALBASE}/bin/emacs &&
+	      $(pgrep emacs | wc -l) -gt 0 ]]; then
+    [[ -z ${DISPLAY} ]] && export EDITOR=emacsclient-nw.sh
     [[ -z ${DISPLAY} ]] || export EDITOR=emacsclient
 else
     export EDITOR=vi
