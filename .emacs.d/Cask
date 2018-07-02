@@ -23,6 +23,7 @@
 (depends-on "flycheck-elixir")
 (depends-on "flycheck-pos-tip")
 (depends-on "git-gutter")
+(depends-on "git-gutter+")
 (depends-on "go-mode")
 (depends-on "golden-ratio")
 (depends-on "groovy-mode")

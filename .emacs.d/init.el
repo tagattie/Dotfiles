@@ -197,11 +197,15 @@
 ;; Magit
 (use-package magit
   :bind ("C-c g" . magit-status))
-;; Git Gutter
-(use-package git-gutter
+;; ;; Git Gutter
+;; (use-package git-gutter
+;;   :config
+;;   (global-git-gutter-mode t)
+;;   (git-gutter:linum-setup))
+;; Git Gutter+
+(use-package git-gutter+
   :config
-  (global-git-gutter-mode t)
-  (git-gutter:linum-setup))
+  (global-git-gutter+-mode))
 ;; Golden Ratio
 (use-package golden-ratio
   :config
