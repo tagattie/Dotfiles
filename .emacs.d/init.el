@@ -110,8 +110,8 @@
 (show-paren-mode t)
 (set-variable 'show-paren-delay 0)
 (set-variable 'show-paren-style 'mixed)
-(set-face-background 'show-paren-match-face "#AABBFF")
-(set-face-foreground 'show-paren-match-face "#000000")
+(set-face-background 'show-paren-match "#AABBFF")
+(set-face-foreground 'show-paren-match "#000000")
 ;; Show whitespace characters
 (with-eval-after-load 'whitespace
   (set-variable 'whitespace-style
