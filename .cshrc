@@ -13,10 +13,9 @@ umask 022
 setenv GOPATH       ${HOME}/share/go
 setenv GOROOT       ${LOCALBASE}/go
 setenv HOST         `hostname -s`
-setenv LV           '-Ou8'
 setenv MANPATH      "${LOCALBASE}/man:${PKGBASE}/man:/usr/share/man:/usr/share/openssl/man"
 setenv MOZILLA_HOME ${LOCALBASE}
-setenv PAGER        lv
+setenv PAGER        less
 setenv QTDIR        ${LOCALBASE}
 setenv TMPDIR       /tmp
 setenv XWINHOME     ${LOCALBASE}
@@ -53,7 +52,6 @@ alias h      history
 alias j      'jobs -l'
 alias l      '\ls -agilFT'
 alias la     '\ls -aF'
-alias less   lv
 alias ls     '\ls -F'
 alias md     mkdir
 alias mv     'mv -i'

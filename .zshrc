@@ -76,7 +76,6 @@ alias h=history
 alias j='jobs -l'
 alias l='\ls -agilFGT'
 alias la='\ls -aFG'
-alias less=lv
 alias ls='\ls -FG'
 alias md=mkdir
 alias mv='mv -i'

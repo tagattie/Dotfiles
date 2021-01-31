@@ -22,7 +22,6 @@ path=(/sbin /bin
 export BLOCKSIZE=K
 export EDITOR=vi
 export LANG=C
-export LV='-Ou8'
 export PAGER=less
 export TMPDIR=/tmp
 

@@ -21,11 +21,10 @@ path=(${HOME}/.cask/bin ${HOME}/bin \
 # Environment variables
 export GOPATH=${HOME}/share/go
 export GOROOT=${LOCALBASE}/go
-export LV='-Ou8'
 export MOZILLA_HOME=${LOCALBASE}
 export NOTI_DEFAULT="banner slack"
 export NOTI_SLACK_CHANNEL="#noti"
-export PAGER=lv
+export PAGER=less
 export QTDIR=${LOCALBASE}
 export TMPDIR=/tmp
 export XWINHOME=${LOCALBASE}
